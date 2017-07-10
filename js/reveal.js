@@ -50,10 +50,10 @@
 			maxScale: 2.0,
 
 			// Display controls in the bottom right corner
-			controls: true,
+			controls: false,
 
 			// Display a presentation progress bar
-			progress: true,
+			progress: false,
 
 			// Display the page number of the current slide
 			slideNumber: false,
@@ -62,7 +62,7 @@
 			showSlideNumber: 'all',
 
 			// Push each slide change to the browser history
-			history: false,
+			history: true,
 
 			// Enable keyboard shortcuts for navigation
 			keyboard: true,
@@ -71,7 +71,7 @@
 			keyboardCondition: null,
 
 			// Enable the slide overview mode
-			overview: true,
+			overview: false,
 
 			// Vertical centering of slides
 			center: true,
@@ -80,7 +80,7 @@
 			touch: true,
 
 			// Loop the presentation
-			loop: false,
+			loop: true, // Ben note: I want the presentation to loop backwards, without showing everything in between
 
 			// Change the presentation direction to be RTL
 			rtl: false,
@@ -147,7 +147,7 @@
 			transition: 'slide', // none/fade/slide/convex/concave/zoom
 
 			// Transition speed
-			transitionSpeed: 'default', // default/fast/slow
+			transitionSpeed: 'slow', // default/fast/slow
 
 			// Transition style for full page slide backgrounds
 			backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
