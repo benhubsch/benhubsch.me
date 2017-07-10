@@ -74,7 +74,7 @@
 			overview: false,
 
 			// Vertical centering of slides
-			center: true,
+			center: false,
 
 			// Enables touch navigation on devices with touch input
 			touch: true,
@@ -273,6 +273,7 @@
 			'F':					'Fullscreen',
 			'ESC, O':				'Slide overview'
 		};
+
 
 	/**
 	 * Starts up the presentation if the client is capable.
@@ -5106,6 +5107,7 @@
 			keyboardShortcuts[key] = value;
 		}
 	};
+
 
 	return Reveal;
 

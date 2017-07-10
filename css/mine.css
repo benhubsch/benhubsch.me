@@ -1,0 +1,93 @@
+/******************************************
+ADDED BY BEN
+******************************************/
+
+.scrollable {
+bottom: 0px;
+overflow-y: auto  !important;
+overflow-x: hidden !important;
+}
+
+.left-arrow {
+  float: left;
+  z-index: 11;
+  position: absolute;
+  left: 0;
+}
+
+.left-arrow::before {
+  position: relative;
+  content: "";
+  display: inline-block;
+  /* By using an em scale, the arrows will size with the font */
+  width: 0.4em;
+  height: 0.4em;
+  border-right: 0.15em solid white;
+  border-top: 0.15em solid white;
+  transform: rotate(225deg);
+  margin-right: 0.5em;
+}
+
+/* Change color */
+.left-arrow:hover {
+color: black; /* For the text */
+}
+.left-arrow:hover::before {
+border-color: white; /* For the arrow (which is a border) */
+zoom: 125%;
+}
+
+.right-arrow {
+  float: right;
+  z-index: 10;
+  position: absolute;
+  right: 0;
+}
+
+.right-arrow::before {
+  position: relative;
+  content: "";
+  display: inline-block;
+  /* By using an em scale, the arrows will size with the font */
+  width: 0.4em;
+  height: 0.4em;
+  border-right: 0.15em solid white;
+  border-top: 0.15em solid white;
+  transform: rotate(45deg);
+  margin-right: 0.5em;
+  /*margin-bottom: 300px;*/
+}
+
+/* Change color */
+.right-arrow:hover {
+color: black; /* For the text */
+}
+
+.right-arrow:hover::before {
+border-color: white; /* For the arrow (which is a border) */
+zoom: 125%;
+}
+
+.smaller-icons {
+  zoom: 65%;
+}
+
+.prof-pic {
+  border-radius: 50%;
+  zoom: 25%;
+  /*zoom: 8%; */
+}
+
+.header-title {
+    text-align: left;
+}
+
+hr {
+    margin-top: -5px;
+    /*margin-bottom: -30px;*/
+}
+
+.plain-text {
+    font-size: 5px;
+}
+

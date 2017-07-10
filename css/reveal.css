@@ -47,12 +47,6 @@ body {
   background-color: #fff;
   color: #000; }
 
-/* ADDED BY BEN FOR SCROLL ON WEBPAGES */
-.scrollable {
-  bottom: 0px;
-  overflow-y: auto  !important;
-  overflow-x: hidden !important;
-}
 
 /*********************************************
  * VIEW FRAGMENTS
