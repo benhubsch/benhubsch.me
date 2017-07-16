@@ -205,7 +205,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 /*********************************************
  * LINKS
  *********************************************/
-.reveal a {
+/*.reveal a {
   color: #42affa;
   text-decoration: none;
   -webkit-transition: color .15s ease;
@@ -215,7 +215,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .reveal a:hover {
   color: #8dcffc;
   text-shadow: none;
-  border: none; }
+  border: none; }*/
 
 .reveal .roll span:after {
   color: #fff;

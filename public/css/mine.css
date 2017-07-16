@@ -228,8 +228,16 @@ h1 span {
 
 .timeline-content h3 {
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     font-size: 25px;
+    font-weight: 500
+}
+
+.timeline-content h5 {
+    text-transform: none;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    font-size: 15px;
     font-weight: 500
 }
 
