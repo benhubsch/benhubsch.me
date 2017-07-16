@@ -1,5 +1,5 @@
 {
-  "name": "reveal.js",
+  "name": "multipage",
   "version": "3.5.0",
   "description": "The HTML Presentation Framework",
   "homepage": "http://lab.hakim.se/reveal-js",
@@ -10,11 +10,7 @@
     "start": "grunt serve",
     "build": "grunt"
   },
-  "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
-  },
+  "author": "Hakim El Hattab <hakim.elhattab@gmail.com> (http://hakim.se)",
   "repository": {
     "type": "git",
     "url": "git://github.com/hakimel/reveal.js.git"
@@ -42,6 +38,13 @@
   },
   "license": "MIT",
   "dependencies": {
+    "address-validator": "^0.2.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "nodemon": "^1.11.0",
     "trianglify": "^1.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/hakimel/reveal.js/issues"
   }
 }

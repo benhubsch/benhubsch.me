@@ -1,0 +1,113 @@
+<section data-state="type-name" data-background-image="./lib/img/green_blue.png" class="center scrollable">
+    <div style="padding-left: 200px; padding-right: 200px">
+        <div>
+            <p class="heybox" style="margin-bottom: 0px">
+                <div class="type-js headline">
+                    <h1 class="text-js" style="margin-bottom: 0px;"><strong>Hey! I'm Ben.</strong></h1>
+                </div>
+            </p>
+            <p class="plain-text something" style="padding-bottom: 30px; font-size: 18px; text-align: justify; text-justify: inter-word; margin-top: -5px; color: white;">
+                Welcome to my site! I'm glad you're here. I'm a rising junior at Duke University pursuing a B.S. in Computer Science with a minor in Spanish and a certificate in Innovation and Entrepreneurship. I shamelessly follow <a href="https://www.instagram.com/retrieverpuppies/">@retrieverpuppies</a> and <a href="https://www.instagram.com/puppyofday/">@puppyofday</a> on Instagram to be sure I get my daily dose of warm and fuzzy feelings, and I have an unparalleled love for Mexican food. I've been known to order my burgers with fried eggs on them but am open to the possibility of substituting the egg for bacon and BBQ sauce. I'm from Los Angeles (what's snow?) and have a pretty ~dope~ twin brother. Lastly, it wouldn't be a proper intro if I didn't mention how much I love basketball. I'm at just about every Duke basketball game, and I follow my hometown Lakers religiously. If there's anything I could talk as much about as computer science, it's basketball.
+                <br><br>
+                As far as the more technical side of things go, I have experience in full-stack development and love all things software engineering. CS is a field I know I'll never know everything about, and that intrigues me! I'm at a point in my life where I have the chance to gobble up so much information covering so many different parts of computer science, which drives me to constantly be learning. There are times where I feel like a dog that has thousands of squirrels running in every direction all around him, and I don't know which ones to chase! Do I go after machine learning, networks, the cloud, operating systems, and/or infrastructure? It's a great problem to have because it means I'm always interested in what I'm studying or working on, and I'm just trying to gobble up as much knowledge as I can!
+            </p>
+        </div>
+        <div style="margin-bottom: 55px;">
+            <span class="ss-style-dots"></span> <span class="ss-style-dots"></span> <span class="ss-style-dots"></span>
+        </div>
+        <div class="container">
+            <div class="timeline-block timeline-block-right">
+                <div class="marker"></div>
+                <div class="timeline-content">
+                    <h3>Startup Internship</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                </div>
+            </div>
+
+            <div class="timeline-block timeline-block-left">
+                <div class="marker"></div>
+                <div class="timeline-content">
+                    <img src="./lib/img/timeline/horizons.png" style="width: 50px; border: 2px solid white; margin-bottom: -13px;">
+                    <h3>Horizons</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                </div>
+            </div>
+
+            <div class="timeline-block timeline-block-right">
+                <div class="marker"></div>
+                <div class="timeline-content">
+                    <h3>Third Year</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                </div>
+            </div>
+
+            <div class="timeline-block timeline-block-left">
+                <div class="marker"></div>
+                <div class="timeline-content">
+                    <h3>Fourth Year</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                </div>
+            </div>
+
+            <div class="timeline-block timeline-block-right">
+                <div class="marker"></div>
+                <div class="timeline-content">
+                    <h3>Fifth Year</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/reveal.js"></script>
+<script>
+
+Reveal.initialize({
+	width: '100%', // ADDED BY BEN
+	// height: '100%', // ADDED BY BEN
+	height: '100%', // ADDED BY BEN
+});
+
+// for "Hey! I'm Ben."
+var first = true
+var state = Reveal.getState();
+if (state.indexh === 1 && first) {
+    first = false;
+    autoType(".type-js",200);
+} else {
+    Reveal.addEventListener( 'type-name', function() {
+        if (first) {
+            autoType(".type-js",200);
+            first = false;
+        }
+    }, false );
+}
+
+function autoType(elementClass, typingSpeed) {
+    var thhis = $(elementClass);
+    thhis.css({
+        "position": "relative",
+        "display": "inline-block"
+    });
+    thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+    thhis = thhis.find(".text-js");
+    var text = thhis.text().trim().split('');
+    var amntOfChars = text.length;
+    var newString = "";
+    thhis.text("|");
+    setTimeout(function(){
+        thhis.css("opacity",1);
+        thhis.prev().removeAttr("style");
+        for(var i = 0; i < amntOfChars; i++){
+            (function(i,char){
+                setTimeout(function() {
+                    newString += char;
+                    thhis.text(newString);
+                },i*typingSpeed);
+            })(i + 1,text[i]);
+        }
+    },1500);
+}
+
+</script>
