@@ -1,4 +1,4 @@
-<section data-background-image="/./lib/img/green_blue.png" class="center scrollable"> <!-- need center scrollable once too long -->
+<section data-background-image="/./lib/img/green_blue_dark.png" class="center scrollable"> <!-- need center scrollable once too long -->
     <h4 style="margin-bottom: 0px; text-transform: none;">Projects and Competitions</h4>
     <p class="plain-text" style="padding: 30px; padding-left: 100px; padding-right: 100px; font-size: 20px; color: white;">Here are some of the things I've worked on. Click anywhere on a card to open it up and check it out, and at bottom of the page you can read about some competitions I've participated in.<p>
     <div id="wrapper" class="loaded">
@@ -9,7 +9,7 @@
                     <div id="info-box" style="background-color: #01C6D4">
                         <div class="info">
                             <h2 style="zoom: 130%; margin-bottom: 60px;">Slack Pizza App</h2>
-                            <h3 style="text-transform: none;">Slack Real-Time Messaging API, Dominos Pizza API, Google Geocode API, Natural Language Processing, Express, Handlebars, MongoDB (JavaScript)</h3>
+                            <h3 style="text-transform: none;">Slack Real Time Messaging API, Dominos Pizza API, Google Geocode API, Natural Language Processing, Express, Handlebars, MongoDB (JavaScript)</h3>
                         </div>
                     </div>
                 </div>
@@ -49,18 +49,12 @@
                         </div>
                     </div>
                 </div>
-                <div id="back" class="scrollable">
-                    <div class="back-info">
-                        <p style="color: black;" class="back3">This was by far the most front-end facing project I've ever done. It gave me really good exposure to technologies that I would never otherwise be exposed to through Duke's curriculum
-                            like CSS, HTML, and JQuery. It was also a good excercise in adapting existing code for my own use and building something from the ground up. There's a ton of code on Github and on the internet generally, and it can make a developer's life a lot easier to be able
-                            to work with it and mold it to fit in with the existing code base. It also opened my eyes to how long things take to look nice! Good design doesn't just happen, it really does take a lot of effort and tweaking to get right.
-                            The number of things I had to fiddle with to get the "Hey! I'm Ben." animation to render properly on my <a href="/about">About</a> page is more than I'd like to admit. But, at the end of the day, I think it came together all
-                            right.
-                        </p>
-                    </div>
-                    <form action="https://github.com/benhubsch/PersonalWebsite">
-                        <button class="github-button">View on Github</button>
-                    </form>
+                <div id="back" class="back3" style="padding-top: 130px;">
+                    <p style="color: black;">
+                      <form action="https://github.com/benhubsch/PersonalWebsite" target="_blank">
+                          <button class="github-button">View on Github</button>
+                      </form>
+                    </p>
                 </div>
             </div>
             <div id="card" class="card4">
@@ -73,17 +67,12 @@
                         </div>
                     </div>
                 </div>
-                <div id="back" class="scrollable">
-                    <div class="back-info">
-                        <p style="color: black;" class="back4">This was a project I'd been wanting to dig into for a little while. I will shamelessly admit that I'm a frequent Reddit browser, and so I'd seen plenty of bots commenting on random feeds here or there.
-                            I also browse r/programming often, and so I knew Reddit was a programmer friendly place. The PRAW API wrapper for Python was easy to use and made interfacing with Reddit straightforward. The same could be said for the Google
-                            Translate API. I think it would be interesting at some point to come up with a fun data science project using the Reddit API at some point. You could come up with some cool visualizations about how traffic spikes at certain times
-                            of the day or during certain days of the year. I don't know. Might have to tackle it at some point. Have any ideas or want to work with me? Let me know!
-                        </p>
-                    </div>
-                    <form action="https://github.com/benhubsch/Reddit-Translation-Bot">
-                        <button class="github-button">View on Github</button>
-                    </form>
+                <div id="back" class="back4" style="padding-top: 130px;">
+                    <p style="color: black;">
+                      <form action="https://github.com/benhubsch/Reddit-Translation-Bot" target="_blank">
+                          <button class="github-button">View on Github</button>
+                      </form>
+                    </p>
                 </div>
             </div>
         </div>
@@ -102,9 +91,9 @@
                     </div>
                     <div id="back" class="scrollable">
                         <div class="back-info">
-                            <p style="color: black;" class="back8">This was as nitty gritty into hardware as I've ever gotten, and it was also unbelievably rewarding. I digitally implemented a processor able to execute some of the most commont instructions in the MIPS instruction set.
-                                My processor implemented some classic elements like an ALU, a register file, memory, a couple of input and output components, control, and a heck of a lot of wires. There's really no better way to understand the basics of how a computer executes instructions than <body>
-                                    actually doing it, so I'm glad to have gone through the process. There were so many little details that could have gotten lost (and did get lost), but I also had a major rush of adrenaline when everything finally hummed along smoothly.
+                            <p style="color: black;" class="back8">This was as nitty gritty into hardware as I've ever gotten, and it was also unbelievably rewarding. I digitally implemented a processor able to execute some of the most common instructions in the MIPS instruction set.
+                                My processor implemented elements like an ALU, a register file, a memory store (IMEM and DMEM), a couple of input and output components, control, and a heck of a lot of wires. There's really no better way to understand the basics of how a computer executes instructions than <body>
+                                    by actually doing it, so I'm glad to have gone through the process. There were so many little details that could have gotten lost (and did get lost), but I also had a major rush of adrenaline when everything finally hummed along smoothly.
                             </p>
                         </div>
                     </div>
@@ -121,10 +110,10 @@
                     </div>
                     <div id="back" class="scrollable">
                         <div class="back-info">
-                            <p style="color: black;" class="back6">I rebuilt the basics of express.js (listen, get, post, send, render, use) to help myself understand how Express works behind the scenes. Before this project, I didn't feel like I understood middleware, routing, or internet protocols all that well, and now I do. I think it's fun to
-                                peel away black box that applications sometimes live in and really understand how they work and why they're written the way they are. When I started working on a function for my get method, I couldn't for the life of me figure out how
-                                I was going to be able to call the callback once all of the routes had been registered. Eventually I realized that I could just use an object and keep track of the routes and their respective callbacks when they were registered, which seems so obvious in retrospect.
-                                Obviously Express is a super popular framework, but I think a lot of people (myself included) fall into a trap of treating some software like black magic, when it's really not.
+                            <p style="color: black;" class="back6">I rebuilt the basics of express.js (implementing methods like listen, get, post, send, render, use) to help myself understand how Express works behind the scenes. Before this project, I didn't feel like I understood middleware, routing, or internet protocols all that well, and now I do. I think it's fun to
+                                peel away the black box that applications sometimes live in and really understand how they work and why they're written the way they are. When I started working on a function for my get method, I couldn't for the life of me figure out how
+                                I was going to be able to execute the callback once all of the routes had been registered. Eventually I realized that I could just use an object and keep track of the routes and their respective callbacks when they were registered, which seems so obvious in retrospect.
+                                Obviously Express is a super popular framework, but I think a lot of people (myself included) fall into a trap of treating some software like magic when it's not.
                             </p>
                         </div>
                         <form action="https://github.com/benhubsch/Express-Rebuilt">
@@ -146,7 +135,7 @@
                         <div class="back-info">
                             <p style="color: black;" class="back9">I implemented a cache simulator in Java that takes as input the block size and the cache configuration, which includes the overall size of the cache in KB, the associativity, and whether the cache is writeback and write-allocate or writethrough and
                                 write-no-allocate. The replacement policy for this cache is LRU, which I implemented using Linked Lists. This allowed me to add new blocks to the front of the list when they were brought into the cache and removed blocks from the end of if and when the set became full.
-                                This was really good practice in understanding how computers can become more efficient and what tradeoffs an architect can make when deciding on cache configuration.
+                                This was really good practice in understanding how computers can become more efficient and what tradeoffs an architect can make.
                             </p>
                         </div>
                     </div>
@@ -163,34 +152,42 @@
                     </div>
                     <div id="back">
                         <div class="back-info">
-                            <p style="color: black;" class="back5">I implemented this Sudoku Solver using a backtracking algorithm after being inspired by the N Queens problem in class. It struck me as such a useful algorithm and I wanted to become familiar with it. I ended up using
+                            <p style="color: black; padding-bottom: 65px;" class="back5">I implemented this Sudoku Solver using a backtracking algorithm after being inspired by the N Queens problem in class. It struck me as such a useful algorithm and I wanted to become familiar with it. I ended up using
                                 a variation of this algorithm for a Google Code Jam problem about arranging horses of different mane colors in certain stalls.
                             </p>
                         </div>
+                        <form action="https://github.com/benhubsch/Sudoku">
+                            <button class="github-button">View on Github</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <div id="wrapper" class="loaded">
+        <div id="wrapper" class="loaded">
             <div id="content" class="column-format">
-                <div id="card" class="card7">
-                    <div id="front">
-                        <div id="top-pic" style="background-color: white; background-image: url('https://g.twimg.com/about/feature-corporate/image/twitterbird_RGB.png')"></div>
-                        <div id="info-box" style="background-color: #6FAEDC;">
+                <div id="card" class="card10">
+                    <div id="front" class="front10">
+                        <div id="top-pic" style="background-color: white; background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Huffman_tree_2.svg/1200px-Huffman_tree_2.svg.png')"></div>
+                        <div id="info-box" style="background-color: #9595F9;">
                             <div class="info">
-                                <h2 style="zoom: 130%; margin-bottom: 60px;">Twitter Map Visualization</h2>
-                                <h3 style="text-transform: none;">Twitter Stream API, D3.js (JavaScript)</h3>
+                                <h2 style="zoom: 130%; margin-bottom: 60px;">Huffman Decompression</h2>
+                                <h3 style="text-transform: none;">(Java)</h3>
                             </div>
                         </div>
                     </div>
                     <div id="back">
                         <div class="back-info">
-                            <p style="color: black;">My name is Jesse Couch, and I am an award winning, intensely creative, coffee-fueled front-end web designer and developer. My style and approach are very straight-forward — I obsess about keeping things as simple as humanly possible. That's it. If you like bells and whistles for the sake of bells and whistles, look elsewhere - but if you want to remain laser-focused on the goals for your new website, it's time time to talk.</p>
+                            <p style="color: black; padding-bottom: 80px;" class="back10">This was a lossless compression program I wrote by converting the bit contents of any file to a Huffman tree, which could be stored at a fraction of the space as the original, uncompressed file. It also implemented
+                              functionality to decompress any file that had been compressed.
+                            </p>
                         </div>
+                        <form action="https://github.com/benhubsch/Huff">
+                            <button class="github-button">View on Github</button>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <div style="margin-top: 35px; padding-bottom: 35px;">
             <span class="ss-style-dots"></span> <span class="ss-style-dots"></span> <span class="ss-style-dots"></span>
         </div>
@@ -205,7 +202,7 @@
               <u>Jane Street Electronic Trading Competition</u>
               <div style="font-size: 18px;">
                   Competing in the Jane Street ETC was some of the most fun I've ever had programming. While I knew relatively little about financial markets and asset classes, the competition was more a test of a team's ability to continually iterate and improve on a trading algorithm
-                   over the course of twelve hours. My team ended up finishing in 2nd place, though the competition was a bit of a roller coaster. We started out in 7th place once we'd connected to the server, and at one point had dipped to as low as 23rd. I've already written substantially about
+                   over the course of twelve hours. My team ended up finishing in 2nd place, though the competition was a roller coaster. We started out in 7th place and at one point had dipped to as low as 23rd. I've already written substantially about
                    my experience at Jane Street in a blog post <a href="https://www.espn.com" target="_blank">HERE</a>.
               </div>
           </div>
@@ -213,18 +210,18 @@
                 <u>Google Code Jam 2017</u>
                 <div style="font-size: 18px;">
                     I had never competed in an algorithm competition of any kind prior to Google Code Jam, and it got me so hooked on competitive programming that I'm planning on doing an independent study on competitive programming next semester. It was inspiring
-                    to see how quickly some people were able to solve problems and advance to next round--I want to get to the point in my career where problems presented by Code Jam in the early rounds are a breeze. I also do believe that competitive programming
+                    to see how quickly some people were able to solve problems and advance to next round &mdash; I want to get to the point in my career where problems presented by Code Jam in the early rounds are a breeze. I also do believe that competitive programming
                     is a skill that can be developed, as I saw my performance across the rounds improve dramatically. You learn what parts of the problem to focus on, and when you should spend more time thinking about a solution that will scale versus writing a brute
-                    force to cash out on the smaller datasets. A friend and I would work side-by-side on the problems during the rounds and then grab a meal afterwords and talk about our solutions and approaches to the problems, which was more valuable than anythin. Very much looking forward to competing next year again!
+                    force to cash out on the smaller datasets. A friend and I would work side-by-side on the problems while competing and then grab a meal afterward and talk about our solutions and approaches to the problems, which was a valuable learning experience. Very much looking forward to competing next year again!
                 </div>
             </div>
             <div style="font-size:25px; margin-bottom: 10px;">
                 <u>Expedia DataFest@Duke</u>
                 <div style="font-size: 18px;">
-                    I absolutely loved the dataset we got to use for this hackathon. We were given essentially had every bit of information you could possibly imagine collecting from Expedia's landing page and were told to do what we wanted with it. The real struggle was
-                    picking a question that whittled down the dataset to a manageable size and was interesting. We decided to look at how income plays a role in travel destination spots. While we didn't have exact income data for Expedia users, we were able to use the billing
-                    zip code of the user and marry that information with government data that mapped zip codes to income. I think we pulled some interesting information out of that dataset, and I had a lot of fun participating. We wrote everything in Python using pandas in Jupyter,
-                    and our visualization used matplotlib.
+                    For this datathon, we were given just about every bit of information you could possibly imagine collecting from Expedia's landing page and were told to do what we wanted with it. The real struggle was
+                    picking a question that whittled down the dataset to a manageable size and was simultaneously interesting. We decided to look at how income plays a role in travel destination spots. While we didn't have exact income data for Expedia users, we were able to use the billing
+                    zip code of the user and marry that information with government data that mapped zip codes to income. We extracted interesting information out of that dataset, and I had a lot of fun participating. We wrote everything in Python using pandas in Jupyter,
+                    and our visualization relied on matplotlib.
                 </div>
             </div>
             <div style="font-size:25px; margin-bottom: 10px;">
@@ -232,35 +229,23 @@
                 <div style="font-size: 18px;">
                     This datathon focused on the job market and economy in the United States post-recession in 2008 and was an interesting combination of computer science, statistics, and economics. My team had two economics majors and two computer science majors on
                     our team, and we did our best to derive geographic and age insights from the data using regressions. We also made an attempt at a machine learning approach, but it admittedly was a failure. We ultimately didn't have enough good time-series data to
-                    both train our machine well and get legitimate results. Oh well, it happens! I worked in Python for this datathon.
+                    both train our machine well and get legitimate results. Oh well, it happens!
                 </div>
             </div>
             <div style="font-size:25px; margin-bottom: 10px;">
                 <u>Horizons Hackathon</u>
                 <div style="font-size: 18px;">
-                    I worked with two friends to build the Slack Pizza App that's I wrote about in my projects section above. We'd already been working on the app before the hackathon and decided to continue working on it because we were learning so much from it and having such a
-                    blast with it. Since I've already explained the bulk of the app already, I'll just briefly share a funny story about this hackathon. There was one point in the middle of the night around 1:30am when we were trying to place orders for pasta and pizza and we were
-                    frustrated because it seemed like they weren't going through. Finally, we placed an order for a chicken alfredo pasta and we got the confirmation email like we'd been expecting. So we show up to Dominos and I tell them that I was there to pick up a pasta that I'd ordered.
-                    The lady behind the counter said, "Uhhh, I actually have FIVE orders of chicken alfredo pasta and one large pepperoni pizza that have all been paid for in your name." Needless to say, we went searchign for that bug and ironed it out... No more accidental quintupling of orders!
+                    I worked with two friends to build the Slack Pizza App that's I linked to in my projects section above. We'd already been working on the app prior to the hackathon and decided to continue working on it because we were learning so much and having such a
+                    blast. Since I explain the project in detail in the <a href="https://github.com/benhubsch/SlackPizza" target="_blank">README on Github</a>, I'll just briefly share a funny story. There was one point in the middle of the night around 1:30am when we were trying to place orders for pasta and pizza and were
+                    confused because it seemed like they weren't going through. Finally, we placed an order for a chicken alfredo pasta and got an email to confirm our order. We then drive to Dominos, and I tell them that I was there to pick up a pasta that I'd ordered.
+                    The lady behind the counter said, "Uhhh, I actually have FIVE orders of chicken alfredo pasta and one large pepperoni pizza that have all been paid for in your name." Needless to say, we had a debug session when we got back home... No more accidental quintupling of orders!
                 </div>
             </div>
-            <!-- <div style="font-size:25px; margin-bottom: 10px;">
-                <u>Jane Street Electronic Trading Challenge</u>
-                <div style="font-size: 18px;">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                </div>
-            </div>
-            <div style="font-size:25px; margin-bottom: 10px;">
-                <u>AngelHack SF Hackathon</u>
-                <div style="font-size: 20px;">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                </div>
-            </div> -->
             <div style="font-size:25px; margin-bottom: 10px;">
                 <u>Duke Catalyst HackerRank Month of Code</u>
                 <div style="font-size: 18px;">
                     This wasn't so much a strict competition as it was a fun way to encourage everyone to sharpen their programming skills outside of class. I made a point of trying to solve problems in a bunch of different languages to keep things fresh and learn about some langauges that
-                    I didn't yet have experience in. It also forced me to think about efficiency since I had submissions rejected a couple of times for being to slow. At the end of the month, I ended up solving the greatest number of problems and had the highest score.
+                    I didn't yet have familiarity with. It also forced me to think about efficiency since I had submissions rejected a couple of times for being overly slow. At the end of the month, I ended up solving the greatest number of problems and had the highest score.
                 </div>
             </div>
         </div>
@@ -312,6 +297,12 @@
         });
         $('.back5').click(function(){
             $(".card5").toggleClass('flip');
+        });
+        $('.front10').click(function(){
+            $(".card10").toggleClass('flip');
+        });
+        $('.back10').click(function(){
+            $(".card10").toggleClass('flip');
         });
         </script>
     </section>

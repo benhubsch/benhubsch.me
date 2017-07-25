@@ -17,19 +17,10 @@
     <!-- Including Jquery  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!-- Printing and PDF exports -->
-    <script>
-    var link = document.createElement( 'link' );
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
-    link.href = window.location.search.match( /print-pdf/gi ) ? '/css/print/pdf.css' : '/css/print/paper.css';
-    document.getElementsByTagName( 'head' )[0].appendChild( link );
-    </script>
-
 </head>
 <body>
     <div class="reveal">
-        <section data-background-image="/./lib/img/green_blue.png">
+        <section data-background-image="/lib/img/green_blue_dark.png">
             <link rel="stylesheet" href="/css/menu.css">
             <div class="random">
                 <nav role="navigation">
@@ -43,6 +34,7 @@
                             <a href="/about"><li id="top">About</li></a>
                             <a href="/projects"><li id="top">Projects</li></a>
                             <a href="/campus"><li id="top">Campus Involvement</li></a>
+                            <a href="https://medium.com/@benhubsch" target="_blank"><li id="top">Blog</li></a>
                             <a href="/contact"><li id="top">Contact</li></a>
                         </ul>
                     </div>
