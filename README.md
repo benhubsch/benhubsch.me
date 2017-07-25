@@ -6,7 +6,6 @@ A website I created to share about myself and my interests as they relate to Com
 
 - [Project Overview](#project-overview)
 - [Demo](#demo)
-- [Contributing](#contributing)
 
 ## Project Overview
 
