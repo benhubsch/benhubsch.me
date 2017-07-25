@@ -459,5 +459,10 @@ iframe { overflow:hidden; }
     -moz-transition: none;
     -o-transition: none;
     transition: none;
+    zoom: 150%
+  }
+
+.github-button:hover {
+  cursor: pointer
 }
 
