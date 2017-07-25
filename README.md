@@ -17,5 +17,5 @@ One of the biggest benefits of doing this project was working on my ability to m
 
 ## Demo
 
-Check it out here: [benhubsch.io](https://www.benhubsch.io).
+I'm gonna let it speak for itself: [benhubsch.io](https://www.benhubsch.io).
 
