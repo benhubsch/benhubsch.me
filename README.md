@@ -11,7 +11,7 @@ A website I created to share about myself and my interests as they relate to Com
 
 This was a project that I'd been meaning to get around to for a long time, I just needed to actually get to work and get it done. I really enjoyed building this site from scratch, though it came with its fair share of challenges (flexbox, I'm lookin' at you!).
 
-This project was written using the HTML, CSS, and JQuery trio with Handlebars set as my view engine and Express handling the routing. I used Bootstrap fairly significantly as well as a handful of other frameworks/libraries here and there.
+This project was written using the HTML, CSS, and JQuery trio with Handlebars set as my view engine and Express handling the routing. I used Bootstrap fairly significantly as well as a handful of other frameworks/libraries here and there. I deployed it on Heroku.
 
 One of the biggest benefits of doing this project was working on my ability to mesh existing components to fit within my personal setup. As an example, I have a dynamic header on my [About](https://www.benhubsch.me/about) page that I found somewhere on CodePen in a slightly different form. When I tried to incorporate it into my page, the padding was off, I had overlapping class names, and the animation didn't work. I had to dive deeper into how that component worked in order to understand why it had worked on CodePen but not in my codebase and sort out the differences. It's a very different kind of debugging than the kind of debugging I'm used to -- i.e., the kind of debugging where your program crashes and an error message gives you hints for what lines to look at. Instead, you have to fiddle with properties using the Chrome Developer Tools, inspect each element, and proceed from there.
 
