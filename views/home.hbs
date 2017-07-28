@@ -1,20 +1,90 @@
-<section data-background-image="../lib/img/green_blue_dark.png" class="center">
-    <div>
-        <img src="./lib/img/funme.jpg" class="prof-pic">
-        <div><strong style="font-size: 150%;">Ben Hubsch</strong></div>
-        <!-- <span class="right-arrow" onclick="Reveal.right()"></span>
-        <span class="left-arrow" onclick="Reveal.left()"></span> -->
-        <div>Software Engineer&nbsp; &bull; &nbsp;Duke University</div>
-        <link rel="stylesheet" href="../assets/css/main.css" />
-        <header id="header">
-            <nav>
-                <ul class="smaller-icons">
-                    <li><a href="https://www.github.com/benhubsch" class="icon fa-github"><span class="label">Github</span></a></li>
-                    <li><a href="https://www.linkedin.com/in/benhubsch" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                    <li><a href="https://medium.com/@benhubsch" class="icon fa-medium"><span class="label">Medium</span></a></li>
-                    <li><a href="mailto:benjamin.hubsch@duke.edu" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-                </ul>
-            </nav>
-        </header>
+<script>
+$('#menuToggle').addClass('fadein')
+$('#menuToggle span').css('background', '#1B76B4')
+</script>
+<section data-background-image="../lib/img/green_blue.png" class="center">
+  <link rel="stylesheet" href="./css/animate.css">
+  <div>
+    <!-- <img src="./lib/img/funme.jpg" class="prof-pic"> -->
+    <p class="heybox" style="margin-bottom: 0px">
+      <div class="type-js headline">
+        <h1 class="text-js" style="margin-bottom: 0px;"><strong>Hey! I'm Ben.</strong></h1>
+      </div>
+    </p>
+    <div class="fadein">
+      <div>Software Engineer&nbsp; &bull; &nbsp;Duke University</div>
+      <link rel="stylesheet" href="../assets/css/main.css" />
+      <header id="header">
+        <nav>
+          <ul class="smaller-icons">
+            <li><a href="https://www.github.com/benhubsch" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+            <li><a href="https://www.linkedin.com/in/benhubsch" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            <li><a href="https://medium.com/@benhubsch" target="_blank" class="icon fa-medium"><span class="label">Medium</span></a></li>
+            <li><a href="mailto:benjamin.hubsch@duke.edu" target="_blank" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+          </ul>
+        </nav>
+      </header>
     </div>
+  </div>
 </section>
+<script src="js/reveal.js"></script>
+<script>
+$('#menuToggle').addClass('fadein')
+$('#menuToggle span').css('background', '#1B76B4')
+var myTurn = true
+$('input').on('click', function() {
+  if (myTurn) {
+    $('#menuToggle span').css('background', '#cdcdcd')
+  } else {
+    $('#menuToggle span').css('background', '#1B76B4')
+  }
+  myTurn = ! myTurn
+})
+
+Reveal.initialize({
+  width: '100%', // ADDED BY BEN
+  // height: '100%', // ADDED BY BEN
+  height: '100%', // ADDED BY BEN
+});
+
+// for "Hey! I'm Ben."
+var first = true
+var state = Reveal.getState();
+if (state.indexh === 0 && first) {
+  first = false;
+  autoType(".type-js",200);
+} else {
+  Reveal.addEventListener( 'type-name', function() {
+    if (first) {
+      autoType(".type-js",200);
+      first = false;
+    }
+  }, false );
+}
+
+function autoType(elementClass, typingSpeed) {
+  var thhis = $(elementClass);
+  thhis.css({
+    "position": "relative",
+    "display": "inline-block"
+  });
+  thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+  thhis = thhis.find(".text-js");
+  var text = thhis.text().trim().split('');
+  var amntOfChars = text.length;
+  var newString = "";
+  thhis.text("|");
+  setTimeout(function(){
+    thhis.css("opacity",1);
+    thhis.prev().removeAttr("style");
+    for(var i = 0; i < amntOfChars; i++){
+      (function(i,char){
+        setTimeout(function() {
+          newString += char;
+          thhis.text(newString);
+        },i*typingSpeed);
+      })(i + 1,text[i]);
+    }
+  },1500);
+}
+</script>

@@ -323,8 +323,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  margin: auto;
-  margin-bottom: 0px;
+  margin: 0px;
   pointer-events: none;
   overflow: visible;
   z-index: 1;
@@ -342,7 +341,7 @@ body {
   display: none;
   position: absolute;
   width: 100%;
-  padding: 20px 0px;
+  /*padding: 20px 0px;*/
   pointer-events: auto;
   z-index: 10;
   -webkit-transform-style: flat;
@@ -858,7 +857,6 @@ body {
   opacity: 0;
   visibility: hidden;
   overflow: hidden;
-  background-color: transparent;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;

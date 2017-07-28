@@ -66,7 +66,7 @@ a:hover
     margin-bottom: 5px;
     position: relative;
 
-    background: black;
+    background: #7a7a7a;
     border-radius: 3px;
 
     z-index: 1;
@@ -96,7 +96,7 @@ a:hover
 {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: lightgrey;
+    background: #cdcdcd;
 }
 
 /*
@@ -129,7 +129,7 @@ a:hover
     padding: 50px;
     padding-top: 125px;
 
-    background: #0277bd;
+    background: #fcfcfc;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
@@ -139,22 +139,24 @@ a:hover
 
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     border-radius: 0 0 10px 0;
-    border: 1px solid grey;
+    height: 1000px;
 }
 
 #menu li
 {
-    padding: 10px 0;
+    padding: 20px 0;
     font-size: 22px;
-    text-align: center;
+    color: #4c4c4c;
 }
 
-#top {
-    border-top: 1px solid white;
+#menu li:hover
+{
+    color: #59c9a5;
 }
 
 #menuToggle input:checked ~ ul
 {
     transform: scale(1.0, 1.0);
     opacity: 1;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.19);
 }

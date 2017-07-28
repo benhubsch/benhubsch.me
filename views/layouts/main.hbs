@@ -1,102 +1,107 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Ben Hubsch</title>
+  <title>Ben Hubsch</title>
 
-    <link rel="stylesheet" href="/css/reveal.css">
-    <link rel="stylesheet" href="/css/theme/black.css">
-    <link rel="stylesheet" href="/css/mine.css">
+  <link rel="stylesheet" href="/css/reveal.css">
+  <link rel="stylesheet" href="/css/theme/black.css">
+  <link rel="stylesheet" href="/css/mine.css">
 
-    <link rel="stylesheet" href="/lib/css/zenburn.css">
+  <link rel="stylesheet" href="/lib/css/zenburn.css">
 
-     <link rel="stylesheet" href="/css/buttons.css">
+  <link rel="stylesheet" href="/css/buttons.css">
 
-    <!-- Including Jquery  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Open Sans font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <!-- Lato -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  <!-- Including Jquery  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 <body>
-    <div class="reveal">
-        <section data-background-image="/lib/img/green_blue_dark.png">
-            <link rel="stylesheet" href="/css/menu.css">
-            <div class="random">
-                <nav role="navigation">
-                    <div id="menuToggle">
-                        <input type="checkbox" />
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <ul id="menu">
-                            <a href="/"><li>Home</li></a>
-                            <a href="/about"><li id="top">About</li></a>
-                            <a href="/projects"><li id="top">Projects</li></a>
-                            <a href="/campus"><li id="top">Campus Involvement</li></a>
-                            <a href="https://medium.com/@benhubsch" target="_blank"><li id="top">Blog</li></a>
-                            <a href="/contact"><li id="top">Contact</li></a>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </section>
-        <div class="slides">
-            <script>
-            $(".button").click(function(){
-                $(this).closest("body").toggleClass("active");
-            });
-            </script>
+  <div class="reveal">
+    <section data-background-image="/lib/img/green_blue_dark.png">
+      <link rel="stylesheet" href="/css/menu.css">
+      <div class="random">
+        <nav role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a href="/"><li>Home</li></a>
+              <a href="/about"><li id="top">About</li></a>
+              <a href="/projects"><li id="top">Projects</li></a>
+              <a href="/campus"><li id="top">Campus Involvement</li></a>
+              <a href="https://medium.com/@benhubsch" target="_blank"><li id="top">Blog</li></a>
+              <a href="/contact"><li id="top">Contact</li></a>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <div class="slides">
+      <script>
+      $(".button").click(function(){
+        $(this).closest("body").toggleClass("active");
+      });
+      </script>
 
-            {{{body}}}
+      {{{body}}}
 
-        </div>
     </div>
+  </div>
 
-    <script src="/lib/js/head.min.js"></script>
-    <script src="/js/reveal.js"></script>
+  <script src="/lib/js/head.min.js"></script>
+  <script src="/js/reveal.js"></script>
 
 
-    <script>
-    // More info about config & dependencies:
-    // - https://github.com/hakimel/reveal.js#configuration
-    // - https://github.com/hakimel/reveal.js#dependencies
-    Reveal.initialize({
-        width: '100%', // ADDED BY BEN
-        // height: '100%', // ADDED BY BEN
-        height: '100%', // ADDED BY BEN
-    });
+  <script>
+  // More info about config & dependencies:
+  // - https://github.com/hakimel/reveal.js#configuration
+  // - https://github.com/hakimel/reveal.js#dependencies
+  Reveal.initialize({
+    width: '100%', // ADDED BY BEN
+    height: '100%', // ADDED BY BEN
+  });
 
-    (function() {
-        'use strict';
-        // define variables
-        var items = document.querySelectorAll(".timeline li");
+  (function() {
+    'use strict';
+    // define variables
+    var items = document.querySelectorAll(".timeline li");
 
-        // check if an element is in viewport
-        // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
-        function isElementInViewport(el) {
-            var rect = el.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
+    // check if an element is in viewport
+    // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+    function isElementInViewport(el) {
+      var rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+    function callbackFunc() {
+      for (var i = 0; i < items.length; i++) {
+        if (isElementInViewport(items[i])) {
+          items[i].classList.add("in-view");
         }
-        function callbackFunc() {
-            for (var i = 0; i < items.length; i++) {
-                if (isElementInViewport(items[i])) {
-                    items[i].classList.add("in-view");
-                }
-            }
-        }
-        // listen for events
-        window.addEventListener("load", callbackFunc);
-        window.addEventListener("resize", callbackFunc);
-        window.addEventListener("scroll", callbackFunc);
+      }
+    }
+    // listen for events
+    window.addEventListener("load", callbackFunc);
+    window.addEventListener("resize", callbackFunc);
+    window.addEventListener("scroll", callbackFunc);
 
-    })();
+  })();
 
-    </script>
+  </script>
 </body>
 </html>
