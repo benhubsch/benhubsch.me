@@ -392,7 +392,7 @@ html h2, body h2 {
 }
 
 #card #front #info-box {
-  height: 29%;
+  height: 30%;
   width: 100%;
   display: table;
   left: 0;
@@ -410,7 +410,7 @@ html h2, body h2 {
   font-size: 13px;
   line-height: 20px;
   padding: 20px 20px 10px 20px;
-  height: 300px;
+  height: 337.5px;
   justify-content: center;
 }
 #card #back .back-info {
