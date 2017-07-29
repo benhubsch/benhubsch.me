@@ -409,7 +409,7 @@ html h2, body h2 {
   z-index: 2;
   font-size: 13px;
   line-height: 20px;
-  padding: 20px 20px 10px 20px;
+  padding: 30px 30px 30px 30px;
   height: 337.5px;
   justify-content: center;
 }
@@ -558,6 +558,68 @@ h1.page-title {
 }
 
 .ghub {
-  align-items: center;
+  overflow: hidden;
 }
 
+.ghub:hover {
+  transition: none;
+}
+
+.blue-bg {
+  background-color: #465775;
+}
+
+.comp-container {
+  background-color: #fcfcfc;
+  height: 500px;
+  width: 425px;
+  border-radius: 3.5px;
+}
+
+.comp-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+#last {
+  display: flex;
+  justify-content: center;
+}
+
+img.comp-logo {
+  float: left;
+  margin: 20px;
+}
+
+.comp-container h3 {
+  font-family: 'Open Sans';
+  margin-top: 65px;
+  margin-bottom: 2px;
+  font-size: 17.5px;
+  font-weight: 500;
+  color: #4c4c4c;
+  text-align: left;
+}
+
+.comp-container h5 {
+  font-family: 'Open Sans';
+  text-transform: none;
+  margin-top: 0px;
+  margin-bottom: 3px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #4c4c4c;
+  text-align: left;
+}
+
+.comp-container p {
+  font-family: 'Open Sans';
+  font-size: 13px;
+  line-height: 1.5em;
+  word-spacing: 1px;
+  color: #4c4c4c;
+  margin-top: -4px;
+  text-align: left;
+  padding: 0px 25px 25px 25px;
+  clear: both;
+}

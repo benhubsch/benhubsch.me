@@ -17,12 +17,16 @@ app.get('/contact', function(req, res) {
     res.render('contact')
 })
 
-app.get('/campus', function(req, res) {
-    res.render('campus')
-})
+// app.get('/campus', function(req, res) {
+//     res.render('campus')
+// })
 
 app.get('/projects', function(req, res) {
     res.render('projects')
+})
+
+app.get('/blog', function(req, res) {
+    res.render('blog')
 })
 
 app.get('/', function(req, res) {
