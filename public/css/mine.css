@@ -623,3 +623,14 @@ img.comp-logo {
   padding: 0px 25px 25px 25px;
   clear: both;
 }
+
+.blog-list u {
+  font-family: 'Open Sans';
+  color: #4c4c4c;
+  font-size: 25px;
+}
+.blog-list li {
+  font-family: 'Open Sans';
+  color: #333333;
+  font-size: 20px;
+}
