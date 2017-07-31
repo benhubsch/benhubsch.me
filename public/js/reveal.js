@@ -62,7 +62,7 @@
 			showSlideNumber: 'all',
 
 			// Push each slide change to the browser history
-			history: true,
+			history: false,
 
 			// Enable keyboard shortcuts for navigation
 			keyboard: true,
@@ -1634,7 +1634,7 @@
 
 		dom.overlay.innerHTML = [
 			'<header>',
-				'<a class="close" href="#"><span class="icon"></span></a>',
+				'<a class="close" href=""><span class="icon"></span></a>',
 				'<a class="external" href="'+ url +'" target="_blank"><span class="icon"></span></a>',
 			'</header>',
 			'<div class="spinner"></div>',
@@ -1712,7 +1712,7 @@
 
 			dom.overlay.innerHTML = [
 				'<header>',
-					'<a class="close" href="#"><span class="icon"></span></a>',
+					'<a class="close" href=""><span class="icon"></span></a>',
 				'</header>',
 				'<div class="viewport">',
 					'<div class="viewport-inner">'+ html +'</div>',
@@ -3600,40 +3600,40 @@
 	 */
 	function writeURL( delay ) {
 
-		if( config.history ) {
-
-			// Make sure there's never more than one timeout running
-			clearTimeout( writeURLTimeout );
-
-			// If a delay is specified, timeout this call
-			if( typeof delay === 'number' ) {
-				writeURLTimeout = setTimeout( writeURL, delay );
-			}
-			else if( currentSlide ) {
-				var url = '/';
-
-				// Attempt to create a named link based on the slide's ID
-				var id = currentSlide.getAttribute( 'id' );
-				if( id ) {
-					id = id.replace( /[^a-zA-Z0-9\-\_\:\.]/g, '' );
-				}
-
-				var idObj = {0: 'contact', 1: 'involvement', 2: 'home', 3: 'about', 4: 'projects'}
-
-				// If the current slide has an ID, use that as a named link
-				if( typeof id === 'string' && id.length ) {
-					url = '/' + id;
-				}
-				// Otherwise use the /h/v index
-				else {
-					if( indexh > 0 || indexv > 0 ) url += indexh;
-					if( indexv > 0 ) url += '/' + indexv;
-					// else if (indexh === 0 && indexv === 0) url += 'contact'
-				}
-
-				window.location.hash = url;
-			}
-		}
+		// if( config.history ) {
+		//
+		// 	// Make sure there's never more than one timeout running
+		// 	clearTimeout( writeURLTimeout );
+		//
+		// 	// If a delay is specified, timeout this call
+		// 	if( typeof delay === 'number' ) {
+		// 		writeURLTimeout = setTimeout( writeURL, delay );
+		// 	}
+		// 	else if( currentSlide ) {
+		// 		var url = '/';
+		//
+		// 		// Attempt to create a named link based on the slide's ID
+		// 		var id = currentSlide.getAttribute( 'id' );
+		// 		if( id ) {
+		// 			id = id.replace( /[^a-zA-Z0-9\-\_\:\.]/g, '' );
+		// 		}
+		//
+		// 		var idObj = {0: 'contact', 1: 'involvement', 2: 'home', 3: 'about', 4: 'projects'}
+		//
+		// 		// If the current slide has an ID, use that as a named link
+		// 		if( typeof id === 'string' && id.length ) {
+		// 			url = '/' + id;
+		// 		}
+		// 		// Otherwise use the /h/v index
+		// 		else {
+		// 			if( indexh > 0 || indexv > 0 ) url += indexh;
+		// 			if( indexv > 0 ) url += '/' + indexv;
+		// 			// else if (indexh === 0 && indexv === 0) url += 'contact'
+		// 		}
+		//
+		// 		window.location.hash = url;
+		// 	}
+		// }
 
 	}
 	/**

@@ -13,9 +13,9 @@ app.get('/about', function(req, res) {
     res.render('about')
 })
 
-app.get('/contact', function(req, res) {
-    res.render('contact')
-})
+// app.get('/contact', function(req, res) {
+//     res.render('contact')
+// })
 
 // app.get('/campus', function(req, res) {
 //     res.render('campus')
