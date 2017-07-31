@@ -33,6 +33,10 @@ app.get('/', function(req, res) {
     res.render('home')
 })
 
+app.get('/home', function(req, res) {
+    res.redirect('/')
+})
+
 app.get('*',function (req, res) {
     res.redirect('/about');
 });
