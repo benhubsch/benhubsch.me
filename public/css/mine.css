@@ -569,16 +569,17 @@ h1.page-title {
   background-color: #465775;
 }
 
-.comp-container {
+div.comp-container {
   background-color: #fcfcfc;
   height: 500px;
   width: 425px;
   border-radius: 3.5px;
+  margin: 0px 15px;
 }
 
 .comp-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 #last {
