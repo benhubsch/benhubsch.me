@@ -33,9 +33,9 @@ app.get('/', function(req, res) {
     res.render('home')
 })
 
-// app.get('*',function (req, res) {
-//     res.redirect('/');
-// });
+app.get('*',function (req, res) {
+    res.redirect('/about');
+});
 
 var port = process.env.PORT || 3000
 app.listen(port, function() {
