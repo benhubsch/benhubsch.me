@@ -250,6 +250,17 @@ h1 span {
   text-align: left;
 }
 
+.timeline-content h4 {
+  font-family: 'Open Sans';
+  text-transform: none;
+  margin-top: 0px;
+  margin-bottom: 4px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #4c4c4c;
+  text-align: left;
+}
+
 .timeline-content h5 {
   font-family: 'Open Sans';
   text-transform: none;
@@ -257,7 +268,7 @@ h1 span {
   margin-bottom: 3px;
   font-size: 13px;
   font-weight: 500;
-  color: #4c4c4c;
+  color: #565555;
   text-align: left;
 }
 
@@ -634,4 +645,12 @@ img.comp-logo {
   font-family: 'Open Sans';
   color: #333333;
   font-size: 20px;
+}
+
+
+.green-url {
+  color: #59c9a5;
+}
+.green-url:hover {
+  color: #465775;
 }
