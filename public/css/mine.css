@@ -652,6 +652,78 @@ img.comp-logo {
 .green-url {
   color: #59c9a5;
 }
+
 .green-url:hover {
   color: #465775;
+}
+
+div.icons2 {
+  right: 0;
+  /*background-color:red;*/
+  z-index:999999999;
+  position: absolute;
+  color: black;
+  zoom: 75%;
+  top: 16%;
+  vertical-align: none;
+}
+
+.fa {
+  color: #ef6f6c;
+}
+.fa:hover {
+  color: #1c6ea5;
+}
+
+.gap {
+  margin: -20px;
+}
+
+.modal {
+  text-align: center;
+  padding: 0!important;
+  color: black;
+  font-family: 'Open Sans';
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal-content {
+  background-color: #fcfcfc;
+}
+
+
+.modal-content h3 {
+  font-family: 'Open Sans';
+  font-size: 35px;
+  font-weight: 500;
+  color: #4c4c4c;
+  text-align: center;
+  text-transform: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  font-family: 'Open Sans';
+  font-size: 23px;
+  line-height: 1.5em;
+  word-spacing: 1px;
+  color: #4c4c4c;
+  margin-top: -4px;
+  text-align: left;
+  padding: 0px 25px 25px 25px;
+  clear: both;
 }
