@@ -641,11 +641,19 @@ img.comp-logo {
   color: #4c4c4c;
   font-size: 25px;
 }
+div.blog-list {
+  justify-content: center;
+  margin:0 auto;
+}
 .blog-list li {
   font-family: 'Open Sans';
   color: #333333;
   font-size: 20px;
   margin: 5px 0px;
+  text-align: left;
+}
+div.blog-container {
+  display: flex;
 }
 
 
