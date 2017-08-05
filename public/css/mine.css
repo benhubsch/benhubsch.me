@@ -735,3 +735,7 @@ div.icons2 {
   padding: 0px 25px 25px 25px;
   clear: both;
 }
+
+div.container::before {
+  display: block;
+}
