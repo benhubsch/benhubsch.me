@@ -45,3 +45,14 @@ var port = process.env.PORT || 3000
 app.listen(port, function() {
     console.log('succesfully connected to port', port);
 })
+
+var http = require("http");
+setInterval(function() {
+  console.log('PINGING HEROKU TO KEEP AWAKE');
+  http.get("http://secure-cove-66195.herokuapp.com/");
+}, 300000);
+
+
+
+
+
