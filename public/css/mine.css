@@ -401,22 +401,9 @@ html h2, body h2 {
   background-image: url(https://unsplash.imgix.net/45/ZLSw0SXxThSrkXRIiCdT_DSC_0345.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=857f07b76abac23a7fb7161cc7b12a46);
   background-size: cover;
 }
-
-#card #front #info-box {
-  height: 30%;
-  width: 100%;
-  display: table;
-  left: 0;
-  bottom: 0;
-  background-color: maroon;
-  opacity: 1;
-  padding: 50px;
-  zoom: 20%
-}
 #card #back {
   transform: rotateY(180deg);
   background-color: rgba(255, 255, 255, 0.6);
-  /*display: table;*/
   z-index: 2;
   font-size: 13px;
   line-height: 20px;
@@ -428,17 +415,26 @@ html h2, body h2 {
   text-align: justify;
   text-justify: inter-word;
 }
-#card .info {
-  display: table-cell;
-  height: 100%;
-  vertical-align: middle;
-  text-align: center;
-}
 #card.flip #front {
   transform: rotateY(180deg);
 }
 #card.flip #back {
   transform: rotateY(360deg);
+}
+#project-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+#project-stack {
+  font-size: 11px;
+  padding-top: 8px;
+  margin: 0px 12px;
+}
+.info {
+  font-weight: bold;
+  height: 100%;
 }
 
 
