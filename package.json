@@ -1,28 +1,34 @@
 {
-  "name": "personal-website",
+  "name": "gatsby-starter-dimension-v2",
+  "description": "Gatsby Starter - Dimension V2",
   "version": "1.0.0",
-  "description": "A website I created to share about myself and my interests as they relate to Computer Science and my Duke experience: [benhubsch.io](https://www.benhubsch.io)",
-  "main": "app.js",
+  "author": "Hunter Chang",
   "dependencies": {
-    "address-validator": "^0.2.2",
-    "express": "^4.15.3",
-    "express-handlebars": "^3.0.0",
-    "nodemon": "^1.17.2",
-    "trianglify": "^1.0.1"
+    "gatsby": "^2.2.9",
+    "gatsby-plugin-manifest": "^2.0.24",
+    "gatsby-plugin-offline": "^2.0.25",
+    "gatsby-plugin-react-helmet": "^3.0.10",
+    "gatsby-plugin-sass": "^2.0.11",
+    "node-sass": "^4.11.0",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
+    "react-helmet": "^5.2.0"
   },
-  "devDependencies": {},
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
   "scripts": {
-    "start": "nodemon app.js",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.2"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/benhubsch/PersonalWebsite.git"
-  },
-  "author": "Ben Hubsch",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/benhubsch/PersonalWebsite/issues"
-  },
-  "homepage": "https://github.com/benhubsch/PersonalWebsite#readme"
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  }
 }
