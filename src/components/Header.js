@@ -4,28 +4,27 @@ import PropTypes from 'prop-types'
 const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
         <div className="logo">
-            <span className="icon fa-diamond"></span>
+          <span className="icon fa-diamond"></span>
         </div>
         <div className="content">
             <div className="inner">
-                <h1>Dimension</h1>
-                <p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
-                for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
+                <h1>Ben Hubsch</h1>
+                <p>I graduated from Duke University in 2019 and am working at Facebook in Washington, D.C. as a software engineer.</p>
             </div>
         </div>
         <nav>
             <ul>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('intro')}}>Intro</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('work')}}>Work</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('about')}}>About</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('contact')}}>Contact</a></li>
+                <li><a href="https://www.facebook.com/ben.hubsch" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/sw33tb3n/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/benhubsch/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/benhubsch" target="_blank">Github</a></li>
+                <li><a href="mailto: bhubsch@gmail.com" target="_blank">Email</a></li>
             </ul>
         </nav>
     </header>
 )
 
 Header.propTypes = {
-    onOpenArticle: PropTypes.func,
     timeout: PropTypes.bool
 }
 
