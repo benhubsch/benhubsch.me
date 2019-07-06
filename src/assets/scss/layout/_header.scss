@@ -48,11 +48,12 @@
 		}
 
 		.logo {
-			width: 5.5rem;
-			height: 5.5rem;
+			width: 8.5rem;
+			height: 8.5rem;
 			line-height: 5.5rem;
 			border: solid _size(border-width) _palette(border);
 			border-radius: 100%;
+			background-image: url("https://i.ibb.co/T8JYzx0/funme.png");
 
 			.icon {
 				&:before {

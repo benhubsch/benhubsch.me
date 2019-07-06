@@ -11,7 +11,6 @@ class IndexPage extends React.Component {
       isArticleVisible: false,
       timeout: false,
       articleTimeout: false,
-      article: '',
       loading: 'is-loading'
     }
     this.setWrapperRef = this.setWrapperRef.bind(this);
