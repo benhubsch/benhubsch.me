@@ -46,7 +46,22 @@ window.___webpackCompilationHash = window.webpackCompilationHash;
   // to return true.
   if ((0, _apiRunnerBrowser.apiRunner)(`registerServiceWorker`).length > 0) {
     require(`./register-service-worker`);
-  }
+  } // In gatsby v2 if Router is used in page using matchPaths
+  // paths need to contain full path.
+  // For example:
+  //   - page have `/app/*` matchPath
+  //   - inside template user needs to use `/app/xyz` as path
+  // Resetting `basepath`/`baseuri` keeps current behaviour
+  // to not introduce breaking change.
+  // Remove this in v3
+
+
+  const RouteHandler = props => _react.default.createElement(_router.BaseContext.Provider, {
+    value: {
+      baseuri: `/`,
+      basepath: `/`
+    }
+  }, _react.default.createElement(_pageRenderer.default, props));
 
   class LocationHandler extends _react.default.Component {
     render() {
@@ -67,8 +82,8 @@ window.___webpackCompilationHash = window.webpackCompilationHash;
         basepath: __BASE_PATH__,
         location: location,
         id: "gatsby-focus-wrapper"
-      }, _react.default.createElement(_pageRenderer.default, (0, _extends2.default)({
-        path: pageResources.page.path === `/404.html` ? location.pathname : pageResources.page.matchPath || pageResources.page.path
+      }, _react.default.createElement(RouteHandler, (0, _extends2.default)({
+        path: encodeURI(pageResources.page.path === `/404.html` ? location.pathname : pageResources.page.matchPath || pageResources.page.path)
       }, this.props, {
         location: location,
         pageResources: pageResources
